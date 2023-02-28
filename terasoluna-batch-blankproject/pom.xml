@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>xxxxxx.yyyyyy.zzzzzz</groupId>
-    <artifactId>projectName</artifactId>
+    <groupId>org.terasoluna.batch</groupId>
+    <artifactId>tutorial</artifactId>
     <version>5.4.1.RELEASE</version>
 
     <name>TERASOLUNA Batch Framework for Java (5.x) Blank Project</name>

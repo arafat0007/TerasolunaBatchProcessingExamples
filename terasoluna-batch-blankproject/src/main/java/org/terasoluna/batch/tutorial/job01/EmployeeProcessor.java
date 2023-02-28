@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package xxxxxx.yyyyyy.zzzzzz.projectName.job01;
+package org.terasoluna.batch.tutorial.job01;
 
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;

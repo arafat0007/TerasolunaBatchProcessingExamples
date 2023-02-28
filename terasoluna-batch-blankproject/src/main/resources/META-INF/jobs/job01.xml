@@ -12,17 +12,17 @@
 
     <import resource="classpath:META-INF/spring/job-base-context.xml"/>
 
-    <context:component-scan base-package="xxxxxx.yyyyyy.zzzzzz.projectName.job01" />
-    <mybatis:scan           base-package="xxxxxx.yyyyyy.zzzzzz.projectName.job01" factory-ref="jobSqlSessionFactory"/>
+    <context:component-scan base-package="org.terasoluna.batch.tutorial.job01" />
+    <mybatis:scan           base-package="org.terasoluna.batch.tutorial.job01" factory-ref="jobSqlSessionFactory"/>
 
     <bean id="employeeReader" class="org.springframework.batch.item.support.ListItemReader" scope="step">
         <constructor-arg>
-            <list value-type="xxxxxx.yyyyyy.zzzzzz.projectName.job01.Employee">
-                <bean class="xxxxxx.yyyyyy.zzzzzz.projectName.job01.Employee" p:empId="1" p:empName="scott" />
-                <bean class="xxxxxx.yyyyyy.zzzzzz.projectName.job01.Employee" p:empId="2" p:empName="virgil" />
-                <bean class="xxxxxx.yyyyyy.zzzzzz.projectName.job01.Employee" p:empId="3" p:empName="gordon" />
-                <bean class="xxxxxx.yyyyyy.zzzzzz.projectName.job01.Employee" p:empId="4" p:empName="john" />
-                <bean class="xxxxxx.yyyyyy.zzzzzz.projectName.job01.Employee" p:empId="5" p:empName="alan" />
+            <list value-type="org.terasoluna.batch.tutorial.job01.Employee">
+                <bean class="org.terasoluna.batch.tutorial.job01.Employee" p:empId="1" p:empName="scott" />
+                <bean class="org.terasoluna.batch.tutorial.job01.Employee" p:empId="2" p:empName="virgil" />
+                <bean class="org.terasoluna.batch.tutorial.job01.Employee" p:empId="3" p:empName="gordon" />
+                <bean class="org.terasoluna.batch.tutorial.job01.Employee" p:empId="4" p:empName="john" />
+                <bean class="org.terasoluna.batch.tutorial.job01.Employee" p:empId="5" p:empName="alan" />
             </list>
         </constructor-arg>
     </bean>

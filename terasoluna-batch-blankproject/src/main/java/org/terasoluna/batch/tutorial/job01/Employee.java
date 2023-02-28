@@ -13,20 +13,30 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package xxxxxx.yyyyyy.zzzzzz.projectName.job01;
-
-import java.util.List;
+package org.terasoluna.batch.tutorial.job01;
 
 /**
- * Repository interface of employees.
+ * Model bean of employees.
  */
-public interface EmployeeRepository {
+public class Employee {
 
-    /**
-     * Find all employees.
-     *
-     * @return list of employees
-     */
-    List<Employee> findAll();
+    private Integer empId;
 
+    private String empName;
+
+    public Integer getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(Integer empId) {
+        this.empId = empId;
+    }
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
 }
