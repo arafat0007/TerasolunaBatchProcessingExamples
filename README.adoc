@@ -59,3 +59,6 @@ $ java -cp 'lib/*:target/*' \
 org.springframework.batch.core.launch.support.CommandLineJobRunner \
 META-INF/jobs/job01.xml job01
 ----
+
+== Branch pupose
+* Main &rarr; a job reading data from in built context, process it and write into a output file. No touch of database
